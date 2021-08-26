@@ -1,0 +1,9 @@
+[line_break]
+disabled = true
+[python]
+python_binary = "python3"
+[cmd_duration]
+disabled = true
+[character]
+success_symbol = "[ﬦ](bold green)"
+error_symbol = "[ﬦ](bold red)"
