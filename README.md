@@ -2,9 +2,6 @@
 
 ![screenshot](screenshot.png)
 
-Details about the screenshot:
-
-
 Links to some stuff I use on my m1 mbp:
 * [iTerm2](https://iterm2.com/) - Main Terminal
 * [kitty](https://github.com/kovidgoyal/kitty/) - Secondary Terminal
