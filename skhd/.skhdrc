@@ -1,5 +1,4 @@
-
-# open alacritty
+# open iTerm
 lctrl + alt + cmd - return : open -n -a iTerm
 
 # focus window
@@ -21,7 +20,7 @@ lctrl + alt + cmd - s : yabai -m window --warp south
 lctrl + alt + cmd - d : yabai -m window --warp east
 
 # balance size of windows
-lctrl + alt + cmd - 0 : yabai -m space --balance
+lctrl + alt + cmd - b : yabai -m space --balance
 
 # fast focus desktop
 lctrl + alt + cmd - 1 : yabai -m space --focus 1
@@ -33,6 +32,7 @@ lctrl + alt + cmd - 6 : yabai -m space --focus 6
 lctrl + alt + cmd - 7 : yabai -m space --focus 7
 lctrl + alt + cmd - 8 : yabai -m space --focus 8
 lctrl + alt + cmd - 9 : yabai -m space --focus 9
+lctrl + alt + cmd - 0 : yabai -m space --focus 10
 
 # create and destroy spaces
 lctrl + alt + cmd - n : yabai -m space --create
@@ -48,6 +48,7 @@ lctrl + alt + cmd + shift - 6 : yabai -m window --space  6; yabai -m space --foc
 lctrl + alt + cmd + shift - 7 : yabai -m window --space  7; yabai -m space --focus 7
 lctrl + alt + cmd + shift - 8 : yabai -m window --space  8; yabai -m space --focus 8
 lctrl + alt + cmd + shift - 9 : yabai -m window --space  9; yabai -m space --focus 9
+lctrl + alt + cmd + shift - 0 : yabai -m window --space  10; yabai -m space --focus 10
 
 # focus monitor
 # ctrl + alt - z  : yabai -m display --focus prev
