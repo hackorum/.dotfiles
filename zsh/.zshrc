@@ -22,9 +22,9 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 . /opt/homebrew/etc/profile.d/z.sh
 
-alias ls="lsd -A"
-alias ll="lsd -lA"
-alias tree="lsd --tree"
+alias ls="exa -a --color=always --icons --group-directories-first"
+alias ll="exa -la --color=always --icons --group-directories-first"
+alias tree="exa -a --color=always --icons --group-directories-first -T"
 alias lz="lazygit"
 alias v="nvim"
 alias python3="python3.9"
