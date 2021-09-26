@@ -1,6 +1,8 @@
 export EDITOR="nvim"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # >>> conda initialize >>>
@@ -42,8 +44,17 @@ function mkcd {
 
 autoload -U compinit && compinit
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '  %b'
+setopt PROMPT_SUBST
+# PS1=$'\E[34m%1~\E[33m${vcs_info_msg_0_} \E[32m \E[0m'
+PS1=$'\E[34m%1~\E[33m${vcs_info_msg_0_} \E[32m \E[0m'
+# PS1=$'\E[34m%1~\E[33m${vcs_info_msg_0_} \E[32m>\E[33m>\E[35m> \E[0m'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias luamake=/Users/neilsabde/.config/nvim/ls/lua-language-server/3rd/luamake/luamake
+
+export PATH="$HOME/.local/bin:$PATH"
