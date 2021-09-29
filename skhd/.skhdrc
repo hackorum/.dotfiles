@@ -1,5 +1,5 @@
 # open iTerm
-lctrl + alt + cmd - return : open -n -a iTerm
+lctrl + alt + cmd - return : open -n -a Alacritty
 
 # focus window
 lctrl + alt + cmd - h : yabai -m window --focus west
