@@ -46,6 +46,13 @@ yabai -m space 8 --label VIII
 yabai -m space 9 --label IX
 yabai -m space 10 --label X
 
+# yabai -m rule --add app="Google Chrome" space=1
+# yabai -m rule --add app="Alacritty"     space=2
+# ^^ these are annoying
+yabai -m rule --add app="Safari"        space=3
+yabai -m rule --add app="Zoom"          space=4
+yabai -m rule --add app="Discord"       space=5
+
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 
