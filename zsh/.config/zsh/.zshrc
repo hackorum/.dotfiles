@@ -1,8 +1,8 @@
 source $ZDOTDIR/zsh-functions
 
-use "zsh-users/zsh-autosuggestions"
-use "zsh-users/zsh-syntax-highlighting"
-use "agkozak/zsh-z"
+install "zsh-users" "zsh-autosuggestions"
+install "zsh-users" "zsh-syntax-highlighting"
+install "agkozak" "zsh-z"
 
 add aliases
 add completion
