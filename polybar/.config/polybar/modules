@@ -1,0 +1,83 @@
+; [colors]
+; background = #DD2e3440
+; background-alt = #DD2e3440
+; foreground = #dfdfdf
+; foreground-alt = #555
+; primary = #ffb52a
+; secondary = #e60053
+; alert = #bd2c40
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:80:...%
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #f90000
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #4bffdc
+label = %percentage_used%%
+
+[module/date]
+type = internal/date
+interval = 5
+date = " %a, %b %d"
+time = %H:%M
+format-prefix = 
+label = %date% - %time%
+format-foreground = ${colors.yellow}
+
+[module/powermenu]
+type = custom/menu
+expand-right = true
+label-open =  Power
+label-close =  Close
+label-active-font = 2
+menu-0-0 =  Restart
+menu-0-0-exec = sudo reboot
+menu-0-1 =  Shutdown
+menu-0-1-exec = sudo poweroff
+format-spacing = 4
+format-padding = 2
+format-foreground = #b48ead
+
+[module/kernel]
+type = custom/script
+exec = uname -r
+label = %output% Kernel
+format-prefix = " "
+format-foreground = ${colors.darkblue}
+
+[module/update]
+type = custom/script
+exec = xbps-install -un | cut -d' ' -f2 | sort | uniq -c | awk '{ printf  "%10s\n", $1 }' | xargs
+interval = 1000
+label = %output% Updates
+format-prefix = " "
+
+[module/uptime]
+type = custom/script
+exec = uptime -p | awk '{$1=""}1' | xargs
+interval = 60000
+format-prefix = " "
+label = %output% Uptime
+format-foreground = ${colors.blue}
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+; vim:ft=dosini

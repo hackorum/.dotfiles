@@ -1,0 +1,49 @@
+include-file = ~/.config/polybar/modules
+[colors]
+background = #DD2e3440
+background-alt = #DD2e3440
+foreground = #dfdfdf
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+blue = #88c0d0
+darkblue = #81a1c1
+yellow = #ebcb8b
+black = #4c566a
+
+[bar/example]
+width = 100%
+height = 27
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = Liga SFMono Nerd Font:pixelsize=9;0
+font-1 = FontAwesome:fontformat=truetype:size=8:antialias=false;0
+
+modules-left = powermenu bspwm i3
+modules-center = xwindow
+modules-right = kernel uptime update date
+
+tray-position = right
+tray-padding = 2
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+; vim:ft=dosini
