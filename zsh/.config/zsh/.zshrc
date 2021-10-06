@@ -7,6 +7,5 @@ install "agkozak" "zsh-z"
 add aliases
 add completion
 add prompt
-add fzf
 add exports
 add vim

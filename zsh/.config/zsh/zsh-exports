@@ -1,4 +1,2 @@
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
-eval "$(/opt/homebrew/bin/brew shellenv)"
-. "$HOME/.cargo/env"
