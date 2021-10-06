@@ -2,7 +2,7 @@
 
 ![screenshot](screenshot.png)
 
-Links to some stuff I use on my m1 mbp:
+Links to some stuff I use on my potato dell n5110:
 * [Alacritty](https://github.com/alacritty/alacritty) - Main Terminal
 * [kitty](https://github.com/kovidgoyal/kitty/) - Secondary Terminal
 * [zsh](https://www.zsh.org/) - Shell
