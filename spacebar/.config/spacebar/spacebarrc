@@ -9,7 +9,7 @@ spacebar -m config spaces                      on
 spacebar -m config spaces_for_all_displays     on
 spacebar -m config space_icon                    #•
 spacebar -m config space_icon_color            0xff5E81AC #5E81AC
-spacebar -m config space_icon_color_secondary  0xff78c4d4 #78c4d4
+spacebar -m config space_icon_color_secondary  0xff81A1C1 #81A1C1
 spacebar -m config space_icon_color_tertiary   0xfffff9b0 #fff9b0
 # spacebar -m config space_icon_strip            I II III IV V VI VII VIII IX X
 
