@@ -86,4 +86,4 @@ shift + cmd - space : \
 lctrl + alt + cmd + shift - r : \
     /usr/bin/env osascript <<< \
         "display notification \"Restarting Yabai\" with title \"Yabai\""; \
-    brew services restart xorpse/formulae/yabai
+    brew services restart yassinebridi/formulae/yabai

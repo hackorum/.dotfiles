@@ -1,0 +1,46 @@
+#!/usr/bin/env sh
+
+spacebar -m config title                       on
+
+spacebar -m config text_font                   "Liga SFMono Nerd Font:Regular:12.0"
+spacebar -m config icon_font                   "Liga SFMono Nerd Font:Regular:12.0"
+
+spacebar -m config spaces                      on
+spacebar -m config spaces_for_all_displays     on
+spacebar -m config space_icon                    #•
+spacebar -m config space_icon_color            0xff5E81AC #5E81AC
+spacebar -m config space_icon_color_secondary  0xff78c4d4 #78c4d4
+spacebar -m config space_icon_color_tertiary   0xfffff9b0 #fff9b0
+# spacebar -m config space_icon_strip            I II III IV V VI VII VIII IX X
+
+spacebar -m config clock                       on
+spacebar -m config clock_icon                  
+spacebar -m config clock_icon_color            0xff88C0D0 #88C0D0
+spacebar -m config clock_format                "%a, %d %b %H:%M"
+
+spacebar -m config power                       on
+spacebar -m config power_icon_strip             
+spacebar -m config power_icon_color            0xffD08770 #D08770
+spacebar -m config battery_icon_color          0xffBF616A #BF616A
+
+spacebar -m config right_shell                 on
+spacebar -m config right_shell_icon            
+spacebar -m config right_shell_icon_color      0xffEBCB8B #EBCB8B
+spacebar -m config right_shell_command         "whoami"
+
+spacebar -m config dnd_icon                    
+spacebar -m config dnd_icon_color              0xffB48EAD #B48EAD
+
+spacebar -m config position                    top
+spacebar -m config display                     all
+
+spacebar -m config height                      26
+spacebar -m config padding_left                20
+spacebar -m config padding_right               20
+spacebar -m config spacing_left                25
+spacebar -m config spacing_right               15
+
+spacebar -m config background_color            0xda2E3440 #2E3440da
+spacebar -m config foreground_color            0xaaE5E9F0 #E5E9F0aa
+
+echo "spacebar configuration loaded.."
