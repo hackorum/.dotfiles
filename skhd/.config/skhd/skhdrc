@@ -34,9 +34,13 @@ lctrl + alt + cmd - 8 : yabai -m space --focus 8
 lctrl + alt + cmd - 9 : yabai -m space --focus 9
 lctrl + alt + cmd - 0 : yabai -m space --focus 10
 
+# fast focus previous and next desktop
+lctrl + alt + cmd - pageup : yabai -m space --focus prev
+lctrl + alt + cmd - pagedown : yabai -m space --focus next
+
 # create and destroy spaces
-lctrl + alt + cmd - n : yabai -m space --create
-lctrl + alt + cmd - x : yabai -m space --destroy
+lctrl + alt + cmd - x : yabai -m space --create
+lctrl + alt + cmd + shift - x : yabai -m space --destroy
 
 # send window to desktop and follow focus
 lctrl + alt + cmd + shift - 1 : yabai -m window --space  1; yabai -m space --focus 1
@@ -51,10 +55,10 @@ lctrl + alt + cmd + shift - 9 : yabai -m window --space  9; yabai -m space --foc
 lctrl + alt + cmd + shift - 0 : yabai -m window --space  10; yabai -m space --focus 10
 
 # focus monitor
-# ctrl + alt - z  : yabai -m display --focus prev
+lctrl + alt + cmd - p : yabai -m display --focus recent
 
 # send window to monitor and follow focus
-# ctrl + cmd - c  : yabai -m window --display next; yabai -m display --focus next
+lctrl + alt + cmd + shift - p : yabai -m window --display recent; yabai -m display --focus recent
 
 # move floating window
 # shift + ctrl - a : yabai -m window --move rel:-20:0
@@ -73,17 +77,19 @@ lctrl + alt + cmd + shift - l : yabai -m window --resize right:50:0; \
 # set insertion point in focused container
 # ctrl + alt - h : yabai -m window --insert west
 
+# toggle window zoom
+lctrl + alt + cmd - f : yabai -m window --toggle zoom-fullscreen
+
 # toggle window split type
 lctrl + alt + cmd - r : yabai -m window --toggle split
 
 # float / unfloat window and center on screen
-shift + cmd - space : \
-    yabai -m window --toggle float; \
-    yabai -m window --toggle border
+lctrl + alt + cmd - space : yabai -m window --toggle float
+
+# float / unfloat window and center on screen
+lctrl + alt + cmd - t : yabai -m window --toggle float;\
+           yabai -m window --grid 4:4:1:1:2:2
 
 # Restart Yabai
-
-lctrl + alt + cmd + shift - r : \
-    /usr/bin/env osascript <<< \
-        "display notification \"Restarting Yabai\" with title \"Yabai\""; \
-    brew services restart yassinebridi/formulae/yabai
+lctrl + alt + cmd - q : brew services restart yassinebridi/formulae/yabai
+lctrl + alt + cmd + shift - q : osascript -e 'tell app "System Events" to log out'
