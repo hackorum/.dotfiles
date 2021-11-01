@@ -10,3 +10,4 @@ add prompt
 add fzf
 add exports
 add vim
+add conda

@@ -2,8 +2,8 @@ window:
   padding:
     x: 16
     y: 16
-  decorations: none
-  opacity: 0.95
+  # decorations: none
+  opacity: 1
   dynamic_title: false
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -31,10 +31,9 @@ font:
   offset:
     x: 1
     y: 1
-
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
+  glyph_offset:
+    y: 1
+    x: 0
   use_thin_strokes: false
 
 #draw_bold_text_with_bright_colors: false
@@ -194,7 +193,29 @@ schemes:
       magenta: "#c411f0"
       cyan: "#11b9c0"
       white: "#ddddee"
-colors: *nord
+  tokyo-dark: &tokyo-dark
+    primary:
+      background: "#11121D"
+      foreground: "#a9b1d6"
+    normal:
+      black: "#32344a"
+      red: "#f7768e"
+      green: "#9ece6a"
+      yellow: "#e0af68"
+      blue: "#7aa2f7"
+      magenta: "#ad8ee6"
+      cyan: "#449dab"
+      white: "#787c99"
+    bright:
+      black: "#444b6a"
+      red: "#ff7a93"
+      green: "#b9f27c"
+      yellow: "#ff9e64"
+      blue: "#7da6ff"
+      magenta: "#bb9af7"
+      cyan: "#0db9d7"
+      white: "#acb0d0"
+colors: *tokyo-dark
 
 selection:
   #semantic_escape_chars: ",?`|:\"' ()[]{}<>\t"

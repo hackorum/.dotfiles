@@ -1,4 +1,25 @@
 #!/usr/bin/env sh
+# LIGHTBLUE=0xff5E81AC
+# BLUE=0xff81A1C1
+# EVENLIGHTERBLUE=0xff88C0D0
+# ORANGE=0xffD08770
+# RED=0xffBF616A
+# YELLOW=0xffEBCB8B
+# PURPLE=0xffB48EAD
+# GREEN=0xffA3BE8C
+# BG=0xda2E3440
+# FG=0xaaE5E9F0
+
+LIGHTBLUE=0xff7da6ff
+BLUE=0xff7aa2f7
+EVENLIGHTERBLUE=0xff0db9d7
+ORANGE=0xffff9e64
+RED=0xfff7768e
+YELLOW=0xffe0af68
+PURPLE=0xffad8ee6
+GREEN=0xff9ece6a
+BG=0xda11121D
+FG=0xaaa9b1d6
 
 spacebar -m config title                       on
 
@@ -8,28 +29,29 @@ spacebar -m config icon_font                   "Liga SFMono Nerd Font:Regular:12
 spacebar -m config spaces                      on
 spacebar -m config spaces_for_all_displays     on
 spacebar -m config space_icon                    #•
-spacebar -m config space_icon_color            0xff5E81AC #5E81AC
-spacebar -m config space_icon_color_secondary  0xff81A1C1 #81A1C1
+spacebar -m config space_icon_color            $LIGHTBLUE #5E81AC
+spacebar -m config space_icon_color_secondary  $BLUE #81A1C1
 spacebar -m config space_icon_color_tertiary   0xfffff9b0 #fff9b0
 # spacebar -m config space_icon_strip            I II III IV V VI VII VIII IX X
 
 spacebar -m config clock                       on
 spacebar -m config clock_icon                  
-spacebar -m config clock_icon_color            0xff88C0D0 #88C0D0
+spacebar -m config clock_icon_color            $EVENLIGHTERBLUE #88C0D0
 spacebar -m config clock_format                "%a, %d %b %H:%M"
 
 spacebar -m config power                       on
 spacebar -m config power_icon_strip             
-spacebar -m config power_icon_color            0xffD08770 #D08770
-spacebar -m config battery_icon_color          0xffBF616A #BF616A
+spacebar -m config power_icon_color            $ORANGE #D08770
+spacebar -m config battery_icon_color          $RED #BF616A
 
 spacebar -m config right_shell                 on
-spacebar -m config right_shell_icon            
-spacebar -m config right_shell_icon_color      0xffEBCB8B #EBCB8B
-spacebar -m config right_shell_command         "whoami"
+# spacebar -m config right_shell_icon            
+spacebar -m config right_shell_icon            阮
+spacebar -m config right_shell_icon_color      $GREEN #EBCB8B
+spacebar -m config right_shell_command         "/Users/neilsabde/.local/bin/get_spotify"
 
 spacebar -m config dnd_icon                    
-spacebar -m config dnd_icon_color              0xffB48EAD #B48EAD
+spacebar -m config dnd_icon_color              $PURPLE #B48EAD
 
 spacebar -m config position                    top
 spacebar -m config display                     all
@@ -40,7 +62,7 @@ spacebar -m config padding_right               20
 spacebar -m config spacing_left                25
 spacebar -m config spacing_right               15
 
-spacebar -m config background_color            0xda2E3440 #2E3440da
-spacebar -m config foreground_color            0xaaE5E9F0 #E5E9F0aa
+spacebar -m config background_color            $BG #2E3440da
+spacebar -m config foreground_color            $FG #E5E9F0aa
 
 echo "spacebar configuration loaded.."
