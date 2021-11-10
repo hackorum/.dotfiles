@@ -15,10 +15,10 @@ yabai -m config active_window_opacity        1.0
 yabai -m config normal_window_opacity        1.0
 yabai -m config window_border                on
 yabai -m config window_border_width          6
-yabai -m config active_window_border_color   0xff7aa2f7
-yabai -m config normal_window_border_color   0xff444b6a
-# yabai -m config active_window_border_color   0xff81A1C1
-# yabai -m config normal_window_border_color   0xff7A808C
+# yabai -m config active_window_border_color   0xff7aa2f7
+# yabai -m config normal_window_border_color   0xff444b6a
+yabai -m config active_window_border_color   0xff81A1C1
+yabai -m config normal_window_border_color   0xff7A808C
 yabai -m config insert_feedback_color        0xff61afef
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
@@ -33,9 +33,6 @@ yabai -m config bottom_padding               12
 yabai -m config left_padding                 12
 yabai -m config right_padding                12
 yabai -m config window_gap                   12
-yabai -m config --space 8 layout float
-yabai -m config --space 9 layout float
-yabai -m config --space 10 layout float
 
 yabai -m space 1 --label I
 yabai -m space 2 --label II
