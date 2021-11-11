@@ -55,7 +55,6 @@ yabai -m rule --add app="Discord"       space=5
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 
-SPACEBAR_HEIGHT=$(spacebar -m config height)
-yabai -m config external_bar all:$SPACEBAR_HEIGHT:0
+yabai -m config external_bar all:26:0
 
 echo "yabai configuration loaded.."
