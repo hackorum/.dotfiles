@@ -95,5 +95,5 @@ lctrl + alt + cmd - t : yabai -m window --toggle float;\
            yabai -m window --grid 4:4:1:1:2:2
 
 # Restart Yabai
-lctrl + alt + cmd - q : brew services restart yassinebridi/formulae/yabai
+lctrl + alt + cmd - q : brew services restart yabai
 lctrl + alt + cmd + shift - q : osascript -e 'tell app "System Events" to log out'
