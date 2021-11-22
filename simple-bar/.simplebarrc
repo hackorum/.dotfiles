@@ -1,1 +1,81 @@
-{"global":{"theme":"dark","floatingBar":true,"noBarBg":true,"noColorInData":false,"bottomBar":false,"inlineSpacesOptions":false,"disableNotifications":false,"backgroundColorAsForeground":false,"font":"FiraCode Nerd Font","fontSize":"11px","yabaiPath":"/opt/homebrew/bin/yabai","shell":"sh","slidingAnimationPace":"4","externalConfigFile":true},"themes":{"lightTheme":"NightShiftLight","darkTheme":"Nord"},"process":{"displayOnlyCurrent":true,"showCurrentSpaceMode":false},"spacesDisplay":{"exclusions":"","titleExclusions":"","exclusionsAsRegex":false,"displayAllSpacesOnAllScreens":false,"hideDuplicateAppsInSpaces":true,"displayStickyWindowsSeparately":false,"hideEmptySpaces":false,"showOptionsOnHover":true},"widgets":{"processWidget":true,"weatherWidget":false,"batteryWidget":true,"wifiWidget":true,"vpnWidget":false,"zoomWidget":false,"soundWidget":true,"micWidget":false,"dateWidget":true,"timeWidget":true,"keyboardWidget":false,"spotifyWidget":false,"musicWidget":false,"mpdWidget":false,"browserTrackWidget":false},"weatherWidgetOptions":{"unit":"C","hideLocation":false,"hideGradient":false,"customLocation":""},"zoomWidgetOptions":{"showVideo":true,"showMic":true},"batteryWidgetOptions":{"toggleCaffeinateOnClick":false,"caffeinateOption":""},"networkWidgetOptions":{"networkDevice":"en0","toggleWifiOnClick":true},"vpnWidgetOptions":{"vpnConnectionName":""},"timeWidgetOptions":{"hour12":false,"dayProgress":false,"showSeconds":false},"dateWidgetOptions":{"shortDateFormat":true,"locale":"en-UK","calendarApp":""},"spotifyWidgetOptions":{"showSpecter":true},"musicWidgetOptions":{"showSpecter":true},"mpdWidgetOptions":{"showSpecter":true,"mpdPort":"6600","mpdHost":"127.0.0.1","mpdFormatString":"%title%[ - %artist%]|[%file%]"},"browserTrackWidgetOptions":{"showSpecter":true},"userWidgets":{"userWidgetsList":{}},"customStyles":{"styles":"/* your custom css styles here */"}}
+{
+  "global": {
+    "theme": "dark",
+    "floatingBar": true,
+    "noBarBg": true,
+    "noColorInData": false,
+    "bottomBar": false,
+    "inlineSpacesOptions": false,
+    "disableNotifications": false,
+    "backgroundColorAsForeground": false,
+    "font": "FiraCode Nerd Font",
+    "fontSize": "11px",
+    "yabaiPath": "/opt/homebrew/bin/yabai",
+    "shell": "sh",
+    "slidingAnimationPace": "4",
+    "externalConfigFile": true
+  },
+  "themes": { "lightTheme": "NightShiftLight", "darkTheme": "Nord" },
+  "process": { "displayOnlyCurrent": true, "showCurrentSpaceMode": false },
+  "spacesDisplay": {
+    "exclusions": "",
+    "titleExclusions": "",
+    "exclusionsAsRegex": false,
+    "displayAllSpacesOnAllScreens": false,
+    "hideDuplicateAppsInSpaces": true,
+    "displayStickyWindowsSeparately": false,
+    "hideEmptySpaces": false,
+    "showOptionsOnHover": true
+  },
+  "widgets": {
+    "processWidget": true,
+    "weatherWidget": false,
+    "batteryWidget": true,
+    "wifiWidget": true,
+    "vpnWidget": false,
+    "zoomWidget": false,
+    "soundWidget": true,
+    "micWidget": false,
+    "dateWidget": true,
+    "timeWidget": true,
+    "keyboardWidget": false,
+    "spotifyWidget": false,
+    "musicWidget": false,
+    "mpdWidget": false,
+    "browserTrackWidget": false
+  },
+  "weatherWidgetOptions": {
+    "unit": "C",
+    "hideLocation": false,
+    "hideGradient": false,
+    "customLocation": ""
+  },
+  "zoomWidgetOptions": { "showVideo": true, "showMic": true },
+  "batteryWidgetOptions": {
+    "toggleCaffeinateOnClick": false,
+    "caffeinateOption": ""
+  },
+  "networkWidgetOptions": { "networkDevice": "en0", "toggleWifiOnClick": true },
+  "vpnWidgetOptions": { "vpnConnectionName": "" },
+  "timeWidgetOptions": {
+    "hour12": false,
+    "dayProgress": false,
+    "showSeconds": false
+  },
+  "dateWidgetOptions": {
+    "shortDateFormat": true,
+    "locale": "en-UK",
+    "calendarApp": ""
+  },
+  "spotifyWidgetOptions": { "showSpecter": true },
+  "musicWidgetOptions": { "showSpecter": true },
+  "mpdWidgetOptions": {
+    "showSpecter": true,
+    "mpdPort": "6600",
+    "mpdHost": "127.0.0.1",
+    "mpdFormatString": "%title%[ - %artist%]|[%file%]"
+  },
+  "browserTrackWidgetOptions": { "showSpecter": true },
+  "userWidgets": { "userWidgetsList": {} },
+  "customStyles": { "styles": "/* your custom css styles here */" }
+}

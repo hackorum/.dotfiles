@@ -49,12 +49,13 @@ yabai -m space 10 --label X
 # yabai -m rule --add app="Alacritty"     space=2
 # ^^ these are annoying
 yabai -m rule --add app="Safari"        space=3
-# yabai -m rule --add app="Zoom"          space=4
+yabai -m rule --add app="Spotify"       space=4
 yabai -m rule --add app="Discord"       space=5
 
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 
-yabai -m config external_bar all:26:0
+yabai -m config external_bar all:27:0
+# yabai -m config external_bar all:0:0
 
 echo "yabai configuration loaded.."
