@@ -2,15 +2,11 @@ window:
   padding:
     x: 16
     y: 16
-  decorations: none
+  decorations: buttonless
   opacity: 1
   dynamic_title: false
 scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
   history: 10000
-
-  # Scrolling distance multiplier.
   multiplier: 3
 
 font:
@@ -36,322 +32,40 @@ font:
     x: 0
   use_thin_strokes: false
 
-#draw_bold_text_with_bright_colors: false
-
-schemes:
-  rosepine: &rosepine
-    colors:
-    primary:
-      background: "0x191724"
-      foreground: "0xe0def4"
-    cursor:
-      text: "0x191724"
-      cursor: "0x796268"
-    vi_mode_cursor:
-      text: "0x191724"
-      cursor: "0x796268"
-    line_indicator:
-      foreground: None
-      background: None
-    selection:
-      text: CellForeground
-      background: "0x2A2738"
-    normal:
-      black: "0x6e6a86"
-      red: "0xeb6f92"
-      green: "0x9ccfd8"
-      yellow: "0xf6c177"
-      blue: "0x31748f"
-      magenta: "0xc4a7e7"
-      cyan: "0xebbcba"
-      white: "0xe0def4"
-    bright:
-      black: "0x6e6a86"
-      red: "0xeb6f92"
-      green: "0x9ccfd8"
-      yellow: "0xf6c177"
-      blue: "0x31748f"
-      magenta: "0xc4a7e7"
-      cyan: "0xebbcba"
-      white: "0xe0def4"
-  nord: &nord
-    colors:
-    primary:
-      background: "#2e3440"
-      foreground: "#d8dee9"
-      dim_foreground: "#a5abb6"
-    cursor:
-      text: "#2e3440"
-      cursor: "#d8dee9"
-    vi_mode_cursor:
-      text: "#2e3440"
-      cursor: "#d8dee9"
-    selection:
-      text: CellForeground
-      background: "#4c566a"
-    search:
-      matches:
-        foreground: CellBackground
-        background: "#88c0d0"
-      bar:
-        background: "#434c5e"
-        foreground: "#d8dee9"
-    normal:
-      black: "#3b4252"
-      red: "#bf616a"
-      green: "#a3be8c"
-      yellow: "#ebcb8b"
-      blue: "#81a1c1"
-      magenta: "#b48ead"
-      cyan: "#88c0d0"
-      white: "#e5e9f0"
-    bright:
-      black: "#4c566a"
-      red: "#bf616a"
-      green: "#a3be8c"
-      yellow: "#ebcb8b"
-      blue: "#81a1c1"
-      magenta: "#b48ead"
-      cyan: "#8fbcbb"
-      white: "#eceff4"
-    dim:
-      black: "#373e4d"
-      red: "#94545d"
-      green: "#809575"
-      yellow: "#b29e75"
-      blue: "#68809a"
-      magenta: "#8c738c"
-      cyan: "#6d96a5"
-      white: "#aeb3bb"
-  tokyo-night: &tokyo-night # Default colors
-    primary:
-      background: "0x1a1b26"
-      foreground: "0xa9b1d6"
-
-    # Normal colors
-    normal:
-      black: "0x32344a"
-      red: "0xf7768e"
-      green: "0x9ece6a"
-      yellow: "0xe0af68"
-      blue: "0x7aa2f7"
-      magenta: "0xad8ee6"
-      cyan: "0x449dab"
-      white: "0x787c99"
-
-    # Bright colors
-    bright:
-      black: "0x444b6a"
-      red: "0xff7a93"
-      green: "0xb9f27c"
-      yellow: "0xff9e64"
-      blue: "0x7da6ff"
-      magenta: "0xbb9af7"
-      cyan: "0x0db9d7"
-      white: "0xacb0d0"
-
-  tokyo-night-storm: &tokyo-night-storm # Default colors
-    primary:
-      background: "0x24283b"
-      foreground: "0xa9b1d6"
-
-    # Normal colors
-    normal:
-      black: "#32344a"
-      red: "#f7768e"
-      green: "0x9ece6a"
-      yellow: "0xe0af68"
-      blue: "0x7aa2f7"
-      magenta: "0xad8ee6"
-      cyan: "0x449dab"
-      white: "0x9699a8"
-
-    # Bright colors
-    bright:
-      black: "0x444b6a"
-      red: "0xff7a93"
-      green: "0xb9f27c"
-      yellow: "0xff9e64"
-      blue: "0x7da6ff"
-      magenta: "0xbb9af7"
-      cyan: "0x0db9d7"
-      white: "0xacb0d0"
-  onedark: &onedark
-    primary:
-      background: "0x1e2127"
-      foreground: "0xabb2bf"
-
-    # Normal colors
-    normal:
-      black: "0x1e2127"
-      red: "0xe06c75"
-      green: "0x98c379"
-      yellow: "0xd19a66"
-      blue: "0x61afef"
-      magenta: "0xc678dd"
-      cyan: "0x56b6c2"
-      white: "0xabb2bf"
-
-    # Bright colors
-    bright:
-      black: "0x5c6370"
-      red: "0xe06c75"
-      green: "0x98c379"
-      yellow: "0xd19a66"
-      blue: "0x61afef"
-      magenta: "0xc678dd"
-      cyan: "0x56b6c2"
-      white: "0xffffff"
-  dracunized-knight: &dracunized-knight # Default colors
-    primary:
-      background: "#101a27"
-      foreground: "#c5c3ce"
-
-    # Normal colors
-    normal:
-      black: "#313a33"
-      red: "#c71952"
-      green: "#55a967"
-      yellow: "#e0cf77"
-      blue: "#5164df"
-      magenta: "#b300df"
-      cyan: "#00a8af"
-      white: "#ccccdd"
-
-    # Bright colors
-    bright:
-      black: "#424b44"
-      red: "#d82a63"
-      green: "#66bf78"
-      yellow: "#f1d088"
-      blue: "#6275f0"
-      magenta: "#c411f0"
-      cyan: "#11b9c0"
-      white: "#ddddee"
-  tokyo-dark: &tokyo-dark
-    primary:
-      background: "#11121D"
-      foreground: "#a9b1d6"
-    normal:
-      black: "#32344a"
-      red: "#f7768e"
-      green: "#9ece6a"
-      yellow: "#e0af68"
-      blue: "#7aa2f7"
-      magenta: "#ad8ee6"
-      cyan: "#449dab"
-      white: "#787c99"
-    bright:
-      black: "#444b6a"
-      red: "#ff7a93"
-      green: "#b9f27c"
-      yellow: "#ff9e64"
-      blue: "#7da6ff"
-      magenta: "#bb9af7"
-      cyan: "#0db9d7"
-      white: "#acb0d0"
-colors: *rosepine
-#   primary:
-#     background: "0x1B1623"
-#     foreground: "0xB9C4E3"
-#
-#   # Colors the cursor will use if `custom_cursor_colors` is true
-#   cursor:
-#     text: "0x221E2F"
-#     cursor: "0xADD692"
-#
-#   # Normal colors
-#   normal:
-#     black: "0x0E0C13"
-#     red: "0xE28D8D"
-#     green: "0xADD692"
-#     yellow: "0xF0DC89"
-#     blue: "0x84A5CB"
-#     magenta: "0xAE9AD6"
-#     cyan: "0xF0A8E4"
-#     white: "0xF0F0F5"
-#
-#   # Bright colors
-#   bright:
-#     black: "0x3E4058"
-#     red: "0xE28D8D"
-#     green: "0xADD692"
-#     yellow: "0xF0DC89"
-#     blue: "0x84A5CB"
-#     magenta: "0xAE9AD6"
-#     cyan: "0xF0A8E4"
-#     white: "0xF0F0F5"
-#
-#   indexed_colors:
-#     - { index: 16, color: "0xF0DC89" }
-#     - { index: 17, color: "0xE28D8D" }
-
+colors:
+  primary:
+    background: "0x191724"
+    foreground: "0xe0def4"
+  cursor:
+    text: "0x191724"
+    cursor: "0x796268"
+  vi_mode_cursor:
+    text: "0x191724"
+    cursor: "0x796268"
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: "0x2A2738"
+  normal:
+    black: "0x6e6a86"
+    red: "0xeb6f92"
+    green: "0x9ccfd8"
+    yellow: "0xf6c177"
+    blue: "0x31748f"
+    magenta: "0xc4a7e7"
+    cyan: "0xebbcba"
+    white: "0xe0def4"
+  bright:
+    black: "0x6e6a86"
+    red: "0xeb6f92"
+    green: "0x9ccfd8"
+    yellow: "0xf6c177"
+    blue: "0x31748f"
+    magenta: "0xc4a7e7"
+    cyan: "0xebbcba"
+    white: "0xe0def4"
 selection:
-  #semantic_escape_chars: ",?`|:\"' ()[]{}<>\t"
-
   save_to_clipboard: true
-
-#cursor:
-# Cursor style
-#style:
-# Cursor shape
-#
-# Values for `shape`:
-#   - ? Block
-#   - _ Underline
-#   - | Beam
-#shape: Block
-
-# Cursor blinking state
-#
-# Values for `blinking`:
-#   - Never: Prevent the cursor from ever blinking
-#   - Off: Disable blinking by default
-#   - On: Enable blinking by default
-#   - Always: Force the cursor to always blink
-#blinking: Off
-
-# Vi mode cursor style
-#
-# If the vi mode cursor style is `None` or not specified, it will fall back to
-# the style of the active value of the normal cursor.
-#
-# See `cursor.style` for available options.
-#vi_mode_style: None
-
-# Cursor blinking interval in milliseconds.
-#blink_interval: 750
-
-# If this is `true`, the cursor will be rendered as a hollow box when the
-# window is not focused.
-#unfocused_hollow: true
-
-# Thickness of the cursor relative to the cell width as floating point number
-# from `0.0` to `1.0`.
-#thickness: 0.15
-
-# Live config reload (changes require restart)
 live_config_reload: true
-# Shell
-#
-# You can set `shell.program` to the path of your favorite shell, e.g.
-# `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
-# shell.
-#
-# Default:
-#   - (macOS) /bin/bash --login
-#   - (Linux/BSD) user login shell
-#   - (Windows) powershell
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login
-
-# Startup directory
-#
-# Directory the shell is started in. If this is unset, or `None`, the working
-# directory of the parent process will be used.
-#working_directory: None
-
-# Send ESC (\x1b) before characters when alt is pressed.
-#alt_send_esc: true
